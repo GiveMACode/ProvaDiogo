@@ -1,6 +1,15 @@
+using System.Text.Json.Serialization;
+using ProvaDiogo.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<AppDataContext>(
+    options => options.UseSqlite("Data Source=ecommerce.db;Cache=shared")
+);
+
+builder.Services.AddControllers();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

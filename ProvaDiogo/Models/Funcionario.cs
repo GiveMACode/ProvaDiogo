@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
 namespace ProvaDiogo.Models;
 
 public class Funcionario
 {
     public int FuncionarioId { get; set; }
-
-    public String Nome { get; set; }
-
-    public String Cpf {get; set; }
+    public string? Nome { get; set; }
+    public string? CPF { get; set; }
 
 }
