@@ -15,15 +15,15 @@ public class Logicas
         {
             imposto = 0.0;
         }
-        else if (salarioBruto <= 2826.65)
+        else if (salarioBruto > 1903.98 && salarioBruto <= 2826.65)
         {
             imposto = (salarioBruto - 1903.98) * 0.075 - 142.80;
         }
-        else if (salarioBruto <= 3751.05)
+        else if (salarioBruto > 2826.65 && salarioBruto <= 3751.05)
         {
             imposto = (salarioBruto - 2826.65) * 0.15 - 354.80;
         }
-        else if (salarioBruto <= 4664.68)
+        else if (salarioBruto > 3751.05 && salarioBruto <= 4664.68)
         {
             imposto = (salarioBruto - 3751.05) * 0.225 - 636.13;
         }
@@ -43,11 +43,11 @@ public class Logicas
         {
             desconto = salarioBruto * 0.08;
         }
-        else if (salarioBruto <= 2822.90)
+        else if (salarioBruto > 1693.72 && salarioBruto <= 2822.90)
         {
             desconto = salarioBruto * 0.09;
         }
-        else if (salarioBruto <= 5645.80)
+        else if (salarioBruto > 2822.90 && salarioBruto <= 5645.80)
         {
             desconto = salarioBruto * 0.11;
         }
